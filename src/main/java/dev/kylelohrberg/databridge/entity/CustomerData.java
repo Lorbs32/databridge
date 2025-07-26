@@ -1,4 +1,4 @@
-package entity;
+package dev.kylelohrberg.databridge.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,6 +16,9 @@ public class CustomerData {
     private String email;
     private String sourceSystem;
     private String importStatus;
+
+    public CustomerData() {
+    }
 
     public long getId() {
         return id;
